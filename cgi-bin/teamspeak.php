@@ -20,4 +20,4 @@ $result = json_encode([
     "uptime" => secondsToTime($ts3Info["virtualserver_uptime"])
 ]);
 
-file_put_contents('../teamspeak.json', $result);
+file_put_contents(dirname(__FILE__) . '/../teamspeak.json', $result);
