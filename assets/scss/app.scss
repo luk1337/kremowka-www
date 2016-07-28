@@ -26,6 +26,10 @@ table.table-nomargin {
   display: none;
 }
 
+section:not([data-id=home]) {
+  display: none;
+}
+
 .navbar,
 .panel {
   border-radius: 0;

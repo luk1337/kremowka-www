@@ -33,6 +33,16 @@ function loadIcecastStatus() {
 }
 
 $(document).ready(function() {
-   loadTS3Status();
-   loadIcecastStatus();
+    loadTS3Status();
+    loadIcecastStatus();
+
+    $("nav a").click(function() {
+        if ($(this).attr('data-id')) {
+            $("nav a").parent().attr('class', '');
+            $(this).parent().attr('class', 'active');
+
+            $("section").hide();
+            $("section[data-id=" + $(this).attr('data-id') + "]").show();
+        }
+    });
 });
