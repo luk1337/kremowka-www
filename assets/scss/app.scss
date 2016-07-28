@@ -1,0 +1,18 @@
+@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+
+body {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+table.table-nomargin {
+  margin-bottom: 0;
+}
+
+#teamspeak {
+  display: none;
+}
+
+#icecast > div[data-id=online] {
+  display: none;
+}

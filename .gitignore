@@ -1,0 +1,5 @@
+.idea
+node_modules
+assets/css/app.css
+icecast.json
+teamspeak.json

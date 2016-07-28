@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Kremowka::dev</title>
+        <link rel="stylesheet" type="text/css" href="assets/css/app.css">
+    </head>
+    <body>
+        <div class="container">
+            <nav class="navbar navbar-default">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#">Kremowka::dev</a>
+                    </div>
+                    <div id="navbar" class="navbar-collapse collapse">
+                        <ul class="nav navbar-nav">
+                            <li class="active"><a href="#">Home</a></li>
+                            <li><a href="#">About</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">WIP</div>
+                        <div class="panel-body">
+                            wip ;-;
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">TeamSpeak 3 :: Status
+                            <a href="ts3server://kremowka.xyz" class="btn btn-xs btn-success pull-right">Connect</a>
+                        </div>
+                        <div class="panel-body">
+                            <div id="teamspeak">
+                                <div data-id="loading">Loading...</div>
+
+                                <table class="table table-nomargin">
+                                    <tr data-id="name">
+                                        <td>Name</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr data-id="platform">
+                                        <td>Platform</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr data-id="version">
+                                        <td>Version</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr data-id="clients">
+                                        <td>Clients</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr data-id="channels">
+                                        <td>Channels</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr data-id="uptime">
+                                        <td>Uptime</td>
+                                        <td></td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">IceCast2 :: Status
+                            <a href="https://radio.kremowka.xyz/stream" class="btn btn-xs btn-success pull-right">Listen</a>
+                        </div>
+                        <div class="panel-body">
+                            <div id="icecast">
+                                <div data-id="offline">Server is currently offline!</div>
+                                <div data-id="online">
+                                    <table class="table table-nomargin">
+                                        <tr data-id="genre">
+                                            <td>Genre</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr data-id="listeners">
+                                            <td>Listeners</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr data-id="listener_peak">
+                                            <td>Listener peak</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr data-id="stream_start">
+                                            <td>Stream start</td>
+                                            <td></td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/app.js"></script>
+    </body>
+</html>
