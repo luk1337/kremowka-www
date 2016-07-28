@@ -1,6 +1,18 @@
 @import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700,400italic");
+
+$colorPrimary: #262626;
+$colorSecondary: #454545;
+
+$colorPrimaryText: #BCBCBC;
+$colorSecondaryText: #DCDCDC;
+
+* {
+  font-family: Lato, Helvetica Neue, Helvetica, Arial, sans-serif;
+}
 
 body {
+  background-color: #121212;
   padding-top: 20px;
   padding-bottom: 20px;
 }
@@ -9,10 +21,65 @@ table.table-nomargin {
   margin-bottom: 0;
 }
 
-#teamspeak {
+#teamspeak,
+#icecast > div[data-id=online] {
   display: none;
 }
 
-#icecast > div[data-id=online] {
-  display: none;
+.navbar,
+.panel {
+  border-radius: 0;
+}
+
+.navbar-default {
+  background-color: $colorPrimary;
+  border-color: $colorPrimary;
+}
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  background-color: $colorSecondary;
+  color: $colorSecondaryText;
+}
+
+.navbar-default .navbar-brand,
+.navbar-default .navbar-nav > li > a {
+  color: $colorPrimaryText;
+}
+
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus,
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: $colorSecondaryText;
+}
+
+.panel-default {
+  background-color: $colorPrimary !important;
+  border-color: $colorPrimary;
+}
+
+.panel-heading {
+  background-color: $colorPrimary !important;
+  color: $colorPrimaryText !important;
+  border-bottom: 0;
+}
+
+.panel-body {
+  background-color: $colorSecondary !important;
+  color: $colorSecondaryText !important;
+}
+
+.panel-heading > a.btn-xs {
+  margin-top: -2px;
+}
+
+.table > thead > tr > th,
+.table > thead > tr > td,
+.table > tbody > tr > th,
+.table > tbody > tr > td,
+.table > tfoot > tr > th,
+.table > tfoot > tr > td {
+  border-color: $colorPrimary;
 }
