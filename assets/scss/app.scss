@@ -55,6 +55,19 @@ table.table-nomargin {
   color: $colorSecondaryText;
 }
 
+.navbar-default .navbar-toggle {
+  border: 0;
+}
+
+.navbar-default .navbar-toggle:hover {
+  background: $colorSecondary;
+}
+
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+  border-color: $colorSecondary;
+}
+
 .panel-default {
   background-color: $colorPrimary !important;
   border-color: $colorPrimary;
