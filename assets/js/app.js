@@ -16,6 +16,10 @@ function loadTS3Status() {
 function loadIcecastStatus() {
     $.getJSON("./icecast.json", function(data) {
         if (data.icestats.source) {
+            if (Array.isArray(data.icestats.source)) {
+                data.icestats.source = data.icestats.source[0];
+            }
+
             $("#icecast-listen").attr('href', data.icestats.source.listenurl);
             $("#icecast [data-id=title] :nth-child(2)").html(data.icestats.source.title);
             $("#icecast [data-id=genre] :nth-child(2)").html(data.icestats.source.genre);
