@@ -16,11 +16,11 @@ function loadTS3Status() {
 function loadIcecastStatus() {
     $.getJSON("./icecast.json", function(data) {
         if (data.icestats.source) {
+            $("#icecast [data-id=title] :nth-child(2)").html(data.icestats.source.title);
             $("#icecast [data-id=genre] :nth-child(2)").html(data.icestats.source.genre);
             $("#icecast [data-id=listeners] :nth-child(2)").html(data.icestats.source.listeners);
             $("#icecast [data-id=listener_peak] :nth-child(2)").html(data.icestats.source.listener_peak);
             $("#icecast [data-id=stream_start] :nth-child(2)").html(data.icestats.source.stream_start);
-            $("#icecast [data-id=title] :nth-child(2)").html(data.icestats.source.title);
 
             $("#icecast [data-id=offline]").slideUp();
             $("#icecast [data-id=online]").slideDown();
