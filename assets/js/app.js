@@ -20,6 +20,7 @@ function loadIcecastStatus() {
             $("#icecast [data-id=listeners] :nth-child(2)").html(data.icestats.source.listeners);
             $("#icecast [data-id=listener_peak] :nth-child(2)").html(data.icestats.source.listener_peak);
             $("#icecast [data-id=stream_start] :nth-child(2)").html(data.icestats.source.stream_start);
+            $("#icecast [data-id=title] :nth-child(2)").html(data.icestats.source.title);
 
             $("#icecast [data-id=offline]").slideUp();
             $("#icecast [data-id=online]").slideDown();
