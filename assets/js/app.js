@@ -44,7 +44,7 @@ $(document).ready(function() {
 
     $("nav a").click(function() {
         if ($(this).attr('data-id')) {
-            $("nav a").parent().attr('class', '');
+            $("ul.nav li").attr('class', '');
             $(this).parent().attr('class', 'active');
 
             $("section").hide();
