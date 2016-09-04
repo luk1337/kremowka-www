@@ -40,7 +40,6 @@ function loadIcecastStatus() {
 
 $(document).ready(function() {
     loadTS3Status();
-    loadIcecastStatus();
 
     $("nav a").click(function() {
         if ($(this).attr('data-id')) {
